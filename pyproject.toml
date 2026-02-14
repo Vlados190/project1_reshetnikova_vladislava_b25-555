@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "project1_reshetnikova_vladislava_b25-555"
+version = "0.1.0"
+description = ""
+authors = ["Vlados190 <vlada101102@yandex.com>"]
+
+packages = [
+    { include = "labyrinth_game" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+
+[tool.poetry.scripts]
+project = "labyrinth_game.main:main"
+
+[dependency-groups]
+dev = [
+    "ruff (>=0.15.1,<0.16.0)"
+]
