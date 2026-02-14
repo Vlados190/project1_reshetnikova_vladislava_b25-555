@@ -6,7 +6,7 @@
 poetry install
 
 # Запуск игры 
-poetry run python labyrinth_game/main.py
+poetry run python main.py
 
 # Способ 2 
 # Установка
