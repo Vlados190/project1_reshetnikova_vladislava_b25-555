@@ -54,5 +54,5 @@ make project
 6. Игра заканчивается победой после открытия сундука или поражением при попадании в ловушку без защиты
 
 # Демонстрация игрового процесса
-[![asciicast](https://asciinema.org/connect/25a2620d-41dd-4505-ab38-b396853f2ca4.svg)](https://asciinema.org/connect/25a2620d-41dd-4505-ab38-b396853f2ca4)
+https://asciinema.org/connect/25a2620d-41dd-4505-ab38-b396853f2ca4
 
