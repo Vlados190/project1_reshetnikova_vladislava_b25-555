@@ -1,5 +1,5 @@
-from constants import ROOMS
-from utils import describe_current_room, attempt_open_treasure, random_event
+from .constants import ROOMS
+from .utils import describe_current_room, attempt_open_treasure, random_event
 
 
 def show_inventory(game_state):
@@ -40,7 +40,6 @@ def move_player(game_state, direction):
     game_state['steps_taken'] += 1
 
     describe_current_room(game_state)
-
     random_event(game_state)
 
 
@@ -62,18 +61,14 @@ def use_item(game_state, item_name):
 
     if item_name == 'torch':
         print("Вы зажгли факел. Стало светлее вокруг.")
-
     elif item_name == 'sword':
         print("Вы держите меч уверенно в руках.")
-
     elif item_name == 'bronze_box':
         print("Вы открыли бронзовую шкатулку.")
         if 'rusty_key' not in game_state['player_inventory']:
             game_state['player_inventory'].append('rusty_key')
             print("Вы нашли внутри: rusty_key")
-
     elif item_name == 'treasure_chest':
         attempt_open_treasure(game_state, get_input)
-
     else:
         print("Вы не знаете, как использовать этот предмет.")
